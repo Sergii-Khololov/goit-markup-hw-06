@@ -1,5 +1,1 @@
-<svg aria-hidden="true" style="position:absolute;width:16;height:15" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
-<defs>
-<symbol id="chek" viewBox="0 0 32 32"><path d="M32 0L0 18l10.227 3.787L26 7 14.003 23.187l.009.003-.012-.003V32l5.735-6.691L27.002 28l4.999-28z"/>
-/symbol>
-</defs></svg>
+<svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.957 4.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z" fill="#fff" stroke="#fff" stroke-width=".2"/></svg>

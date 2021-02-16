@@ -350,9 +350,16 @@ body {
 
   color: var(--white-color);
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   border: 0;
+  transition: box-shadow 250ms var(--transition-cubic);
+  
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);:
 }
 
 /*====== Hero End ======*/
@@ -619,9 +626,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-list-item {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -630,6 +635,12 @@ input[type="radio"].visually-hidden {
 
 .footer-link {
   color: var(--contact-color);
+  transition: color 250ms var(--transition-cubic);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-link-mail,
@@ -772,13 +783,14 @@ input[type="radio"].visually-hidden {
 .features-list-link {
   display: inline-block;
 
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  transition: box-shadow 250ms var(--transition-cubic);
 }
 
-.features-list-item .features-list-link:hover,
-.features-list-item .features-list-link:focus {
+.features-list-link:hover,
+.features-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -855,6 +867,7 @@ input[type="radio"].visually-hidden {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: all 250ms var(--transition-cubic);
+  opacity: 1;
 }
 
 .modal {
@@ -1024,18 +1037,22 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
-  background-image: url("../images/modal/checkbox.svg");
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+  background-image: url("../images/modal/chek.svg");
 }
 
 .modal-form-check-policy:focus + .modal-form-label-policy::before {
-  background: #2196f3;
-  border-radius: 2px;
+  border: 2px solid var(--accent-color);
   outline: none;
 }
 
 .modal-form-label-policy {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   min-width: 400px;
   height: 24px;
@@ -1051,7 +1068,6 @@ input[type="radio"].visually-hidden {
 
 .modal-label-link {
   color: var(--subtitle-color);
-  padding-left: 9px;
   transition: color 250ms var(--transition-cubic);
 }
 
@@ -1123,19 +1139,41 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .footer-form-input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+  padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background: transparent;
+  color: var(--white-color);
+  transition: border-color 250ms var(--transition-cubic);
 }
+
+.footer-form-input::placeholder {
+  width: 47px;
+  height: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-input:focus {
+  border-color: var(--white-color);
+}
+
+
 
 .footer-form-btn {
   min-width: 200px;
@@ -1143,19 +1181,23 @@ input[type="radio"].visually-hidden {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  cursor: pointer;
 
-  color: #ffffff;
+  color: var(--white-color);
+  background: var(--accent-color);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  transition: box-shadow 250ms var(--transition-cubic);
+  /* transition: background-color 250ms var(--transition-cubic), */
+  /* color 250ms var(--transition-cubic);  */
 }
 
 .footer-form-ikon {
@@ -1165,3 +1207,11 @@ input[type="radio"].visually-hidden {
 
   fill: currentColor;
 }
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
