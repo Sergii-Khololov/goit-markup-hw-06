@@ -350,16 +350,15 @@ body {
 
   color: var(--white-color);
   background: var(--accent-color);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   transition: box-shadow 250ms var(--transition-cubic);
-  
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
- box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);:
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*====== Hero End ======*/
@@ -666,6 +665,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-ikon {
@@ -761,7 +761,7 @@ input[type="radio"].visually-hidden {
   border-radius: 4px;
 
   transition: background-color 250ms var(--transition-cubic),
-    color 250ms var(--transition-cubic);
+    box-shadow 250ms var(--transition-cubic);
 }
 
 /*====== Filtr End ======*/
@@ -1173,8 +1173,6 @@ input[type="radio"].visually-hidden {
   border-color: var(--white-color);
 }
 
-
-
 .footer-form-btn {
   min-width: 200px;
   height: 50px;
@@ -1213,5 +1211,3 @@ input[type="radio"].visually-hidden {
   border: 1px solid var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-
