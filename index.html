@@ -200,6 +200,7 @@
 
           <ul class="team-list list">
             <li class="team-item">
+              <!-- <a href="#" class="team-item-link"></a> -->
               <img
                 src="./images/team/ihor.jpg"
                 alt="Игорь"
@@ -382,42 +383,42 @@
           <ul class="clients-list list">
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="44px" height="49px">
                   <use href="./images/sprite.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="40px" height="52px">
                   <use href="./images/sprite.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="41px" height="42px">
                   <use href="./images/sprite.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="80px" height="42px">
                   <use href="./images/sprite.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="59px" height="47px">
                   <use href="./images/sprite.svg#logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="#" class="clients-link">
-                <svg class="clients-ikon">
+                <svg class="clients-ikon" width="88px" height="45px">
                   <use href="./images/sprite.svg#logo-6"></use>
                 </svg>
               </a>
@@ -493,17 +494,17 @@
           <p class="footer-form-text">Подпишитесь на рассылку</p>
           <span class="footer-form-container">
             <input
-              type="mail"
+              type="email"
               name="user-policy"
               class="footer-form-input"
               placeholder="E-mail"
             />
-            <buttom type="submit" class="footer-form-btn">
+            <button type="submit" class="footer-form-btn">
               Подписаться
               <svg class="footer-form-ikon">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
-            </buttom>
+            </button>
           </span>
         </form>
       </div>
@@ -519,7 +520,7 @@
 
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="modal-form">
-          <label for="" class="modal-form-input-label">
+          <label class="modal-form-input-label">
             Имя
             <span class="modal-form-input-wrapper">
               <input
@@ -536,14 +537,14 @@
             </span>
           </label>
 
-          <label for="" class="modal-form-input-label">
+          <label class="modal-form-input-label">
             Телефон
             <span class="modal-form-input-wrapper">
               <input
                 type="tel"
                 name="user-phone"
                 class="modal-form-input"
-                placeholder="tel*"
+                placeholder="096-111-11-11"
                 required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
               />
@@ -553,14 +554,14 @@
             </span>
           </label>
 
-          <label for="" class="modal-form-input-label">
+          <label class="modal-form-input-label">
             Почта
             <span class="modal-form-input-wrapper">
               <input
                 type="email"
-                name="user-mail"
+                name="user-email"
                 class="modal-form-input"
-                placeholder="mail*"
+                placeholder="test@gmail.com"
                 required
               />
               <svg class="modal-form-icon">
@@ -569,10 +570,7 @@
             </span>
           </label>
 
-          <label
-            for=""
-            class="modal-form-input-label modal-form-input-textarea"
-          >
+          <label class="modal-form-input-label modal-form-input-textarea">
             Комментарий
 
             <textarea
@@ -592,7 +590,7 @@
             >Соглашаюсь с рассылкой и принимаю
             <a href="#" class="modal-label-link">Условия договора</a></label
           >
-          <buttom type="submit" class="modal-form-btn">Отправить</buttom>
+          <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
     </div>
