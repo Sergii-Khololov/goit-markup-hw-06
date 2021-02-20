@@ -1125,11 +1125,16 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form-input-label {
+  margin-bottom: 10px;
+}
+
+.modal-form-text {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 
   color: var(--subtitle-color);
 }
